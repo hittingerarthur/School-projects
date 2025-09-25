@@ -1,0 +1,50 @@
+//
+//  Carre.h
+//  Exam blanc
+//
+//  Created by Arthur Hittinger on 28/03/2024.
+//
+
+#include<iostream>
+#include<cmath>
+
+using namespace std;
+
+//----------------------------------
+class carre: public forme{
+//----------------------------------
+public:
+    //methodes
+           carre(double=0);
+    void   afficher();
+    double perimetre();
+    double aire();
+    int    type();
+
+};
+//------------------------------------------------
+carre::carre(double a):forme(a){}
+
+double carre::perimetre()
+{
+    return(x*4);
+}
+
+double carre::aire()
+{
+    return(pow(x,2));
+}
+
+int carre::type(){return(2);}
+
+void carre::afficher()
+{
+    cout<<"----------------------"<<endl;
+    cout<<"c'est un carre"<<endl;
+    cout<<"----------------------"<<endl;
+    cout<<"rayon     :  "<<x<<endl;
+    cout<<"perimetre :  "<<carre::perimetre()<<endl;
+    cout<<"aire      :  "<<carre::aire()<<endl;
+    cout<<"type      :  "<<carre::type()<<endl;
+    cout<<"----------------------"<<endl;
+}
