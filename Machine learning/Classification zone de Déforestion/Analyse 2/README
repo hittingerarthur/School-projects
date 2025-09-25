@@ -1,0 +1,7 @@
+Hello Sir, just a small explication on how to use the code on GEE.
+
+You can first copy paste all the text in
+the DataPoints.txt file, GEE will then prpose to convert it into features and you will have access to the points
+we placed on the map.
+
+Then we have different code files for diffferent years, each gives back our land cover classification as well as the accuracy of the model and the Confusion Matrix. It takes around 2 minutes before the layer of the land cover classification appears so that the code finishes computations. We also added a way to export the obtained data to google drive so that analyses can be made further.
